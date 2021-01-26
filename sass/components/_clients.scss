@@ -18,16 +18,20 @@
   border-radius: 4px;
 }
 
-.logo-link:hover,
-.logo-link:focus {
-  color: $accent-color;
-  border-color: $accent-color;
+.logo-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }
 
 .logo-svg {
   fill: currentColor;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+.clients-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }

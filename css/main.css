@@ -37,9 +37,10 @@ img {
   height: auto;
 }
 
-​
-​
-:root {
+/**
+Use a more readable tab size (opinionated).
+*/
+​ :root {
   -moz-tab-size: 4;
   -o-tab-size: 4;
      tab-size: 4;
@@ -346,6 +347,10 @@ nav .logo span {
   letter-spacing: 0.02em;
 }
 
+.nav-link.current {
+  color: #2196f3;
+}
+
 .nav-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,11 +381,9 @@ nav .logo span {
   fill: currentColor;
 }
 
-.nav-link:hover,
-.nav-link:focus,
+.nav-link:hover, .nav-link:focus,
 .nav-contact:hover,
-.nav-contact:focus,
-.nav-link.current {
+.nav-contact:focus {
   color: #2196f3;
 }
 
@@ -437,8 +440,7 @@ nav .logo span {
   cursor: pointer;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
   color: #2196f3;
   background-color: #ffffff;
 }
@@ -504,8 +506,7 @@ nav .logo span {
   cursor: pointer;
 }
 
-.modal-close-button:hover,
-.modal-close-button:focus {
+.modal-close-button:hover, .modal-close-button:focus {
   fill: #2196f3;
   border-color: #2196f3;
 }
@@ -553,9 +554,8 @@ nav .logo span {
   letter-spacing: 0.01em;
 }
 
-.service-input:hover,
+.service-input:hover, .service-input:focus-within,
 .service-textarea:hover,
-.service-input:focus-within,
 .service-textarea:focus-within {
   border-color: #2196f3;
 }
@@ -651,26 +651,22 @@ nav .logo span {
   letter-spacing: 0.01em;
 }
 
-.service-textarea:hover::-webkit-input-placeholder,
-.service-textarea:focus-within::-webkit-input-placeholder {
+.service-textarea:hover::-webkit-input-placeholder, .service-textarea:focus-within::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.143;
 }
 
-.service-textarea:hover:-ms-input-placeholder,
-.service-textarea:focus-within:-ms-input-placeholder {
+.service-textarea:hover:-ms-input-placeholder, .service-textarea:focus-within:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.143;
 }
 
-.service-textarea:hover::-ms-input-placeholder,
-.service-textarea:focus-within::-ms-input-placeholder {
+.service-textarea:hover::-ms-input-placeholder, .service-textarea:focus-within::-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.143;
 }
 
-.service-textarea:hover::placeholder,
-.service-textarea:focus-within::placeholder {
+.service-textarea:hover::placeholder, .service-textarea:focus-within::placeholder {
   font-size: 14px;
   line-height: 1.143;
 }
@@ -741,8 +737,7 @@ nav .logo span {
       align-self: center;
 }
 
-.hero-button.service-button:hover,
-.hero-button.service-button:focus {
+.hero-button.service-button:hover, .hero-button.service-button:focus {
   color: #ffffff;
   background-color: #188ce8;
 }
@@ -937,8 +932,7 @@ nav .logo span {
   fill: #afb1b8;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -971,8 +965,7 @@ nav .logo span {
   border-radius: 4px;
 }
 
-.logo-link:hover,
-.logo-link:focus {
+.logo-link:hover, .logo-link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
@@ -1020,8 +1013,7 @@ nav .logo span {
   border-radius: 4px;
 }
 
-.sorter-button:hover,
-.sorter-button:focus {
+.sorter-button:hover, .sorter-button:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1040,8 +1032,7 @@ nav .logo span {
   width: calc((100%-60px) / 3);
 }
 
-.projects-item:hover,
-.projects-item:focus-within {
+.projects-item:hover, .projects-item:focus-within {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1193,8 +1184,7 @@ nav .logo span {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -1269,8 +1259,7 @@ nav .logo span {
   letter-spacing: 0.03em;
 }
 
-.footer-input:hover,
-.footer-input:focus-within {
+.footer-input:hover, .footer-input:focus-within {
   border-color: #ffffff;
 }
 
@@ -1311,7 +1300,9 @@ nav .logo span {
 }
 
 .subscribe-button:hover > .send-icon,
-.subscribe-button:focus-within > .send-icon,
+.subscribe-button:focus-within > .send-icon, .subscribe-button:hover,
+.subscribe-text:hover > .send-icon,
+.subscribe-text:focus-within > .send-icon,
 .subscribe-text:hover {
   fill: #2196f3;
   color: #2196f3;

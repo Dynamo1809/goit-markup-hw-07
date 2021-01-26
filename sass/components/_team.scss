@@ -16,8 +16,10 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
+.team-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-title {
@@ -60,8 +62,10 @@
   align-items: center;
 }
 
-.social-list .social-item:not(:last-child) {
-  margin-right: 10px;
+.social-list .social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-link {
@@ -74,8 +78,10 @@
   fill: $svg-color;
 }
 
-.social-link:hover,
-.social-link:focus {
-  fill: #ffffff;
-  background-color: $accent-color;
+.social-link {
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+    background-color: $accent-color;
+  }
 }

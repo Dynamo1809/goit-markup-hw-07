@@ -11,8 +11,10 @@
   width: calc((100%-60px) / 4);
 }
 
-.advantages-list .advantages-item:not(:last-child) {
-  margin-right: 30px;
+.advantages-list .advantages-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-div {

@@ -32,8 +32,10 @@ nav .logo span {
   display: flex;
 }
 
-.nav-list > .item:not(:last-child) {
-  margin-right: 50px;
+.nav-list > .item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav-link {
@@ -48,12 +50,18 @@ nav .logo span {
   letter-spacing: 0.02em;
 }
 
+.nav-link.current {
+  color: $accent-color;
+}
+
 .nav-contacts {
   display: flex;
 }
 
-.nav-contacts > .item:not(:last-child) {
-  margin-right: 50px;
+.nav-contacts > .item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav-contact {
@@ -72,25 +80,27 @@ nav .logo span {
   fill: currentColor;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-contact:hover,
-.nav-contact:focus,
-.nav-link.current {
-  color: $accent-color;
+.nav-link,
+.nav-contact {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .nav-link {
   position: relative;
 }
 
-.nav-link.current::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background: $accent-color;
+.nav-link.current {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+  }
 }

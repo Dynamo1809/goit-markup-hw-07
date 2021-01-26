@@ -1,8 +1,8 @@
 @import "./utils/variables";
 
-@import "./utils/modern-normalize";
-@import "./components/base";
-@import "./components/container";
+@import "./base/modern-normalize";
+@import "./base/base";
+@import "./base/container";
 
 @import "./components/header";
 @import "./components/hero";

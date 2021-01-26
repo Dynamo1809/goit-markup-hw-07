@@ -40,12 +40,11 @@ img {
   max-width: 100%;
   height: auto;
 }
-​
+
 /**
 Use a more readable tab size (opinionated).
 */
-​
-:root {
+​ :root {
   -moz-tab-size: 4;
   tab-size: 4;
 }
